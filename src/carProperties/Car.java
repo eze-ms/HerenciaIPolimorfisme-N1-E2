@@ -6,10 +6,13 @@ public class Car {
     private final int power;
 
 
-    public Car(String model, int power) {
-        Car.model = model;
+    public Car(int power) {
         this.power = power;
     }
+
+   public void updateModel(){
+        Car.model = "Yaris";
+   }
 
     public void accelerate() {
         System.out.println("The vehicle is accelerating.");

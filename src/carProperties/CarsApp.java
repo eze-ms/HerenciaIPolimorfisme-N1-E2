@@ -4,9 +4,10 @@ public class CarsApp {
     public static void main(String[] args) {
         System.out.println("Program started.");
 
+        Car car1 = new Car(150);
+        Car car2 = new Car(110);
 
-        Car car1 = new Car("Corolla", 150);
-        Car car2 = new Car("Yaris", 110);
+        car1.updateModel();
 
         // Display information about car1
         System.out.println("Brand: " + Car.getBrand());
